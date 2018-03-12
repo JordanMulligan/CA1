@@ -1,0 +1,28 @@
+@(projectForm: Form[models.Project], user: models.users.User)
+@import helper._
+
+@main("Add Project",user) {
+    <p class="lead">Add a new Project</p>
+    @form(action=routes.HomeController.addProjectSubmit(), 'class -> "form-horizontal", 'role -> "form") {
+        @* CSRF attack prevention *@
+        @CSRF.formField
+
+        @inputText(projectForm("name"), '_label -> "Name", 'class -> "form-control")
+        @select(
+            projectForm("department.id"),
+            options(Department.options),
+            '_label -> "Department", '_default -> "-- Choose a Department --",
+            '_showConstraints -> false, 'class -> "form-control"
+        )
+       
+
+        @inputText(projectForm("id"), '_label -> "", 'hidden -> "hidden")
+
+        <div class="actions">
+            <input type="submit" value="Add/Update Project" class="btn btn-primary">
+            <a href="@routes.HomeController.index(0)">
+                <button type="button" class="btn btn-warning">Cancel</button>
+            </a>
+        </div>
+    }
+}

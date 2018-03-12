@@ -1,0 +1,19 @@
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/ca1/app/views/employee.scala.html:25:13: value map is not a member of object views.html.employee[0m
+[0m[[0m[31merror[0m] [0m[0m    @for(e<-employee) {[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/ca1/app/views/index.scala.html:1:1: type Projects is not a member of package models[0m
+[0m[[0m[31merror[0m] [0m[0m@(projects: List[models.Projects], categories: List[models.Department], user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/ca1/app/views/index.scala.html:1:25: type Projects is not a member of package models[0m
+[0m[[0m[31merror[0m] [0m[0m@(projects: List[models.Projects], categories: List[models.Department], user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/ca1/app/views/index.scala.html:14:34: value getProjects is not a member of models.Department[0m
+[0m[[0m[31merror[0m] [0m[0m          <span class="badge">@c.getProjects.size()</span>[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/ca1/app/views/index.scala.html:35:14: missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m        @for(p<-projects) {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/ca1/app/views/index.scala.html:63:2: type Projects is not a member of package models[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
